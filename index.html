@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIGISHA '22 OFFICIAL WEBSITE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ffc85c8eaa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="backg">
+        <h1>JIGISHA</h1>
+        <h3>A quiz fest conducted by UEMK Quiz Club, Pragya</h3>
+        <ul class="list1">
+            <li>
+                <a href="#">OUR TEAM</a>
+                <a href="#">EVENTS</a>
+                <a href="#">CONTACTS</a>
+                <a href="#">RESULTS</a>
+                <a href="https://bit.ly/Jigisha" target="_blank" id="reg">REGISTER</a>
+            </li>
+        </ul>
+        <div class="glass">
+            <div class="sliderContainer">
+                <div class="myslides" id="sixthsense">
+                    <p>Sixthsense <br><br>Sixthsense is a open-for-all general quiz competition with no age limit as
+                        such. Teaming
+                        format is duo or lone wolves, and team-up process is flexible and easy.</p>
+                </div>
+                <div class="myslides" id="convergence">
+                    <p>Convergence <br><br>Convergence is a mainly bizTech genre quiz, with added spices of sports. The
+                        duo team members or lone wolves must be under 25 to participate.</p>
+                </div>
+                <div class="myslides" id="fandomania">
+                    <p>Fandomania <br><br>Fandomania is a quiz based on only fandom and Pop culture. A goldmine for Pop
+                        culture fans, The duo team or lone wolves participants must be under 25.</p>
+                </div>
+                <div class="myslides" id="hithomerun">
+                    <p>Hit the Homerun <br><br> Hit the Homerun is a sports and games quiz, specially made with care for
+                        the sports quizzers out there. The duo team members or lone wolves participating must be under
+                        the age of 25.</p>
+                </div>
+                <div class="myslides" id="school">
+                    <p>Jana Ojana <br><br> Jana Ojana is a general school quiz. School students currently in classes 8
+                        to 12 are allowed to participate in a team of 2 or lone wolf format.</p>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="btncont">
+                <a class="readmore">READ MORE</a>
+                <a class="regbtn" href="https://bit.ly/Jigisha" style="text-decoration: none;" target="_blank">REGISTER</a>
+            </div>
+        </div>
+        <ul class="wrapper">
+            <li class="icon facebook" onclick="url()">
+              <span class="tooltip">Facebook</span>
+              <a href="https://www.facebook.com/pragyauemk" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="icon twitter">
+              <span class="tooltip">Twitter</span>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="icon github">
+              <span class="tooltip">Github</span>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="icon youtube">
+              <span class="tooltip">Youtube</span>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+    </div>
+    <script>
+        var slideIndex = 1;
+        ShowSlides(slideIndex);
+        function plusSlides(n) {
+            ShowSlides(slideIndex += n);
+        }
+        function currentSlides(n) {
+            ShowSlides(slideIndex = n);
+        }
+        function ShowSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("myslides");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+
+        }
+    </script>
+</body>
+
+</html>
